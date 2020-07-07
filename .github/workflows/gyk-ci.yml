@@ -58,6 +58,7 @@ jobs:
       run: git push origin $DOWNSTREAM_BRANCH
 
   build_openwrt:
+    needs: merge
 
     name: Build OpenWrt and release
     runs-on: ubuntu-18.04
